@@ -2,5 +2,24 @@
     "header": {
         "imagen": "./img/logo.png",
         "link": "Sign In"
+    },
+
+    "top": {
+        "texto": "STEP 1 OF 3",
+        "titulo": "Choose the plan that's right for you",
+        "parrafo":[
+            {
+                "imagen": "#check",
+                "texto": " Watch all you want. Ad-free."
+            },
+            {
+                "imagen": "#check",
+                "texto": " Recommendations just for you."
+            },
+            {
+                "imagen": "#check",
+                "texto": " Change or cancel your plan anytime."
+            }
+        ]
     }
 }

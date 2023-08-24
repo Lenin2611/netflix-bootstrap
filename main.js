@@ -14,3 +14,18 @@ seleccion.insertAdjacentHTML('beforeend', /*html*/`
 }
 construirHeader("config");
 
+let construirPircingHeader = async(file) => {
+    let peticion = await fetch(`${file}.json`);
+    let res = await peticion.json();
+    let seleccion = document.querySelector('#myJsonPircingHeader');
+    seleccion.insertAdjacentHTML('beforeend', /*html*/`
+    <p>${res.top.texto}</p>
+    <h1 class="text-body-emphasis">${res.top.titulo}</h1>
+    <div>
+        ${res.top.parrafo.map((value) => /*html*/`
+        <svg id="chulo" class="bi" width="30" height="30" style="color: #e50b16;">
+            <use xlink:href="${value.imagen}" />
+        </svg></td><span class="header-text3">${value.texto}</span><br>`).join(' ')}
+    </div>`);
+}
+construirPircingHeader("config");
