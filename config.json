@@ -21,5 +21,15 @@
                 "texto": " Change or cancel your plan anytime."
             }
         ]
+    },
+
+    "row": {
+            "titulo1": "Basic",
+            "precio1": "COP16,900",
+            "titulo2": "Standard",
+            "precio2": "COP26,900",
+            "titulo3": "Premium",
+            "precio3": "COP38,900",
+            "texto": "/mo"
     }
 }

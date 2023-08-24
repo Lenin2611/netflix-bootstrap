@@ -29,3 +29,41 @@ let construirPircingHeader = async(file) => {
     </div>`);
 }
 construirPircingHeader("config");
+
+let construirRow = async(file) => {
+    let peticion = await fetch(`${file}.json`);
+    let res = await peticion.json();
+    let seleccion = document.querySelector('#myJsonRow');
+    seleccion.insertAdjacentHTML('beforeend', /*html*/`
+        <div class="col">
+            <button id="card1" class="card mb-4 rounded-0 shadow-sm px-0 py-0">
+                <div class="card-header py-3 rounded-0" style="background-color: #ef6b71;">
+                    <h4 class="my-0 fw-normal text-white">${res.row.titulo1}</h4>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title pricing-card-title">${res.row.precio1}<small class="text-body-secondary fw-light">${res.row.texto}</small></h2>
+                </div>
+            </button>
+        </div>
+        <div class="col">
+            <button id="card1" class="card mb-4 rounded-0 shadow-sm px-0 py-0">
+                <div class="card-header py-3 rounded-0" style="background-color: #ef6b71;">
+                    <h4 class="my-0 fw-normal text-white">${res.row.titulo2}</h4>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title pricing-card-title">${res.row.precio2}<small class="text-body-secondary fw-light">${res.row.texto}</small></h2>
+                </div>
+            </button>
+        </div>
+        <div class="col">
+            <button id="card1" class="card border-danger mb-4 rounded-0 shadow-sm px-0 py-0">
+                <div class="card-header py-3 rounded-0" style="background-color: #e50914;">
+                    <h4 class="my-0 fw-normal text-white">${res.row.titulo3}</h4>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title pricing-card-title">${res.row.precio3}<small class="text-body-secondary fw-light">${res.row.texto}</small></h2>
+                </div>
+            </button>`);
+}
+construirRow("config");
+
