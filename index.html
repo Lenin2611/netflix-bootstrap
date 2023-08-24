@@ -16,6 +16,7 @@
   <link href="./index.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <script src="./assets/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="./main.js"></script>
 </head>
 
 <body>
@@ -97,19 +98,11 @@
   </svg>
 
   <div class="container">
-    <header class="border-bottom">
-      <div class="header d-flex flex-column flex-md-row align-items-center">
-        <a href="/" class="d-flex align-items-center text-decoration-none">
-          <img width="166" src="./img/logo.png" alt="Netflix">
-        </a>
+    <header id="myJsonHeader" class="border-bottom">
 
-        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-          <a class="me-3 py-2 text-decoration-none" href="#">Sign In</a>
-        </nav>
-      </div>
     </header>
 
-    <div class="pricing-header p-3 pb-md-4 mx-auto">
+    <div id="myJsonPircingHeader" class="pricing-header p-3 pb-md-4 mx-auto">
       <p>STEP <strong>1</strong> OF <strong>3</strong></p>
       <h1 class="text-body-emphasis">Choose the plan that's right for you</h1>
       <div>
@@ -128,28 +121,28 @@
     <main class="mx-auto">
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col">
-          <div id="card1" class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3 " style="background-color: #ef6b71;">
+          <button id="card1" class="card mb-4 rounded-0 shadow-sm px-0 py-0">
+            <div class="card-header py-3 rounded-0" style="background-color: #ef6b71;">
               <h4 class="my-0 fw-normal text-white">Basic</h4>
             </div>
             <div class="card-body">
               <h2 class="card-title pricing-card-title">COP16,900<small class="text-body-secondary fw-light">/mo</small></h2>
             </div>
-          </div>
+          </button>
         </div>
         <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3" style="background-color: #ef6b71;">
+          <button id="card1" class="card mb-4 rounded-0 shadow-sm px-0 py-0">
+            <div class="card-header py-3 rounded-0" style="background-color: #ef6b71;">
               <h4 class="my-0 fw-normal text-white">Standard</h4>
             </div>
             <div class="card-body">
               <h2 class="card-title pricing-card-title">COP26,900<small class="text-body-secondary fw-light">/mo</small></h2>
             </div>
-          </div>
+          </button>
         </div>
         <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3" style="background-color: #e50914;">
+          <button id="card1" class="card border-danger mb-4 rounded-0 shadow-sm px-0 py-0">
+            <div class="card-header py-3 rounded-0" style="background-color: #e50914;">
               <h4 class="my-0 fw-normal text-white">Premium</h4>
             </div>
             <div class="card-body">
@@ -159,29 +152,29 @@
         </div>
       </div>
 
-      <div class="table-responsive overflow-hidden">
+      <div class="table-responsive overflow-hidden mx-auto">
         <table class="table text-center">
           <tbody>
             <tr>
               <th></th>
-              <th>Basic</th>
-              <th>Standard</th>
-              <th style="color: #e50914;">Premium</th>
+              <th><p class="uno">Basic</p></th>
+              <th><p class="dos">Standard</p></th>
+              <th><p class="tres" style="color: #e50914;">Premium</p></th>
             </tr>
             <tr>
               <th scope="row" class="text-start">Video quality</th>
-              <td>Good</td>
-              <td>Better</td>
-              <td style="color: #e50914;">Best</td>
+              <td class="uno">Good</td>
+              <td class="dos">Better</td>
+              <td class="tres" style="color: #e50914;">Best</td>
             </tr>
           </tbody>
 
           <tbody>
             <tr>
               <th scope="row" class="text-start">Resolution</th>
-              <td>720p</td>
-              <td>1080p</td>
-              <td style="color: #e50914;">4K+HDR</td>
+              <td class="uno">720p</td>
+              <td class="dos">1080p</td>
+              <td class="tres" style="color: #e50914;">4K+HDR</td>
             </tr>
             <tr>
               <th scope="row" class="text-start">Watch on your TV, computer, mobile phone and tablet</th>
@@ -198,7 +191,7 @@
           </tbody>
         </table>
       </div>
-      <div class="pircing-text">
+      <div class="pircing-text mx-auto">
         <p>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <a class="text-decoration-none" href="#">Terms of Use</a> for more details.</p>
         <p>Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard and 1 with Basic.</p>
         <h3 class="text-center"><a style="background-color: #e50914; padding: 15px 175px;" class="rounded text-decoration-none text-white" href="#">Next</a></h3>
