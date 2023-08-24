@@ -67,3 +67,27 @@ let construirRow = async(file) => {
 }
 construirRow("config");
 
+let construirTable = async(file) => {
+    let peticion = await fetch(`${file}.json`);
+    let res = await peticion.json();
+    let seleccion = document.querySelector('#myJsonTable');
+    seleccion.insertAdjacentHTML('beforeend', /*html*/`
+    <table class="table text-center">
+        <tbody>
+            <tr>
+                <th></th>
+                <th><p class="uno">Basic</p></th>
+                <th><p class="dos">Standard</p></th>
+                <th><p class="tres" style="color: #e50914;">Premium</p></th>
+            </tr>
+        ${res.top.parrafo.map((value) => /*html*/`
+            <tr>
+                <th scope="row" class="text-start">Video quality</th>
+                <td class="uno">Good</td>
+                <td class="dos">Better</td>
+                <td class="tres" style="color: #e50914;">Best</td>
+            </tr>
+        </tbody>`).join(' ')}
+    </table>`);
+}
+construirTable("config");

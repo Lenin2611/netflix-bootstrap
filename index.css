@@ -80,6 +80,10 @@ footer {
   max-width: 950px;
 }
 
+tr {
+  max-width: 200px;
+}
+
 .row{
   max-width: 1100px;
 }
