@@ -115,12 +115,12 @@ seleccion.insertAdjacentHTML('beforeend', /*html*/`
     <small class="d-block mb-3 text-body-secondary link-secondary">${res.footer.text}</small><br>
     </div>
     ${res.footer.links.map((value) => /*html*/`
-        <div class="col-6 col-md">
+        <div class="col-sm">
             <ul class="list-unstyled text-small">
                 <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${value.link1}</a></li><br>
                 <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${value.link2}</a></li><br>
             </ul>
         </div>`).join(' ')}
-        <div width="20"><select data-uia="language-picker" class="nfSelect rounded-0 px-3 py-2 mb-4" id="lang-switcher-select" name="__langSelect" tabindex="0"><option selected="" label="${res.footer.lang2}" lang="es" value="/signup/planform?locale=es-CO">${res.footer.lang2}</option><option label="${res.footer.lang1}" lang="en" value="/signup/planform?locale=en-CO">${res.footer.lang1}</option></select></>`);
+        <div width="10"><select data-uia="language-picker" class="nfSelect rounded-0 px-3 py-2 mb-4" id="lang-switcher-select" name="__langSelect" tabindex="0"><option selected="" label="${res.footer.lang2}" lang="es" value="/signup/planform?locale=es-CO">${res.footer.lang2}</option><option label="${res.footer.lang1}" lang="en" value="/signup/planform?locale=en-CO">${res.footer.lang1}</option></select></>`);
 }
 construirFooter("config");
