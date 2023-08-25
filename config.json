@@ -3,6 +3,7 @@
         "imagen": "./img/logo.png",
         "link": "Sign In"
     },
+
     "top": {
         "texto": "STEP 1 OF 3",
         "titulo": "Choose the plan that's right for you",
@@ -21,6 +22,7 @@
             }
         ]
     },
+
     "row": {
         "card": [
             {
@@ -38,6 +40,7 @@
         "precio": "COP38,900",
         "texto": "/mo"
     },
+
     "table": {
         "titulo1": "Basic",
         "titulo2": "Standard",
@@ -61,6 +64,7 @@
             }
         ]
     },
+
     "text": {
         "part1": "HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our ",
         "link1": "Terms of Use",
@@ -68,6 +72,7 @@
         "part3": "Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard and 1 with Basic.",
         "link2": "Next"
     },
+    
     "footer": {
         "text": "Questions? Call 01 800 917 1563",
         "links": [

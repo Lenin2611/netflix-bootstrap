@@ -66,35 +66,30 @@ let construirTable = async(file) => {
     seleccion.insertAdjacentHTML('beforeend', /*html*/`
     <div class="table-responsive overflow-hidden mx-auto">
         <table class="table text-center">
-            <tbody>
-                <tr>
-                    <th></th>
-                    <th><p class="uno">${res.table.titulo1}</p></th>
-                    <th><p class="dos">${res.table.titulo2}</p></th>
-                    <th><p class="tres" style="color: #e50914;">${res.table.titulo3}</p></th>
-                </tr>
-                <tr>
-                    <th scope="row" class="text-start">${res.table.inside[0].titulo}</th>
-                    <td class="uno">${res.table.inside[0].basic}</td>
-                    <td class="dos">${res.table.inside[0].standard}</td>
-                    <td class="tres" style="color: #e50914;">${res.table.inside[0].premium}</td>
-                </tr>
-            </tbody>
-
-            <tbody>
-                <tr>
-                    <th scope="row" class="text-start">${res.table.inside[1].titulo}</th>
-                    <td class="uno">${res.table.inside[1].basic}</td>
-                    <td class="dos">${res.table.inside[1].standard}</td>
-                    <td class="tres" style="color: #e50914;">${res.table.inside[1].premium}</td>
-                </tr>
-                <tr>
-                    <th scope="row" class="text-start">${res.table.inside[2].titulo}</th>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="${res.table.inside[2].imagen}" /></svg></td>
-                    <td><svg class="bi" width="24" height="24"><use xlink:href="${res.table.inside[2].imagen}" /></svg></td>
-                    <td><svg style="color: #e50914;" class="bi" width="24" height="24"><use xlink:href="${res.table.inside[2].imagen}"/></svg></td>
-                </tr>
-            </tbody>
+            <tr>
+                <th></th>
+                <th><p class="uno">${res.table.titulo1}</p></th>
+                <th><p class="dos">${res.table.titulo2}</p></th>
+                <th><p class="tres" style="color: #e50914;">${res.table.titulo3}</p></th>
+            </tr>
+            <tr>
+                <th scope="row" class="text-start">${res.table.inside[0].titulo}</th>
+                <td class="uno">${res.table.inside[0].basic}</td>
+                <td class="dos">${res.table.inside[0].standard}</td>
+                <td class="tres" style="color: #e50914;">${res.table.inside[0].premium}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-start">${res.table.inside[1].titulo}</th>
+                <td class="uno">${res.table.inside[1].basic}</td>
+                <td class="dos">${res.table.inside[1].standard}</td>
+                <td class="tres" style="color: #e50914;">${res.table.inside[1].premium}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-start">${res.table.inside[2].titulo}</th>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="${res.table.inside[2].imagen}" /></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="${res.table.inside[2].imagen}" /></svg></td>
+                <td><svg style="color: #e50914;" class="bi" width="24" height="24"><use xlink:href="${res.table.inside[2].imagen}"/></svg></td>
+            </tr>
         </table>
     </div>`);
 }
