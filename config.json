@@ -3,7 +3,6 @@
         "imagen": "./img/logo.png",
         "link": "Sign In"
     },
-
     "top": {
         "texto": "STEP 1 OF 3",
         "titulo": "Choose the plan that's right for you",
@@ -22,14 +21,74 @@
             }
         ]
     },
-
     "row": {
-            "titulo1": "Basic",
-            "precio1": "COP16,900",
-            "titulo2": "Standard",
-            "precio2": "COP26,900",
-            "titulo3": "Premium",
-            "precio3": "COP38,900",
-            "texto": "/mo"
+        "card": [
+            {
+                "titulo": "Basic",
+                "precio": "COP16,900",
+                "texto": "/mo"
+            },
+            {
+                "titulo": "Standard",
+                "precio": "COP26,900",
+                "texto": "/mo"
+            }
+        ],
+        "titulo": "Premium",
+        "precio": "COP38,900",
+        "texto": "/mo"
+    },
+    "table": {
+        "titulo1": "Basic",
+        "titulo2": "Standard",
+        "titulo3": "Premium",
+        "inside": [
+            {
+                "titulo": "Video Quality",
+                "basic": "Good",
+                "standard": "Better",
+                "premium": "Best"
+            },
+            {
+                "titulo": "Resolution",
+                "basic": "720p",
+                "standard": "1080p",
+                "premium": "4K+HDR"
+            },
+            {
+                "titulo": "Watch on your TV, computer, mobile phone and tablet",
+                "imagen": "#check"
+            }
+        ]
+    },
+    "text": {
+        "part1": "HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our ",
+        "link1": "Terms of Use",
+        "part2": " for more details.",
+        "part3": "Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard and 1 with Basic.",
+        "link2": "Next"
+    },
+    "footer": {
+        "text": "Questions? Call 01 800 917 1563",
+        "links": [
+            {
+                "link1": "FAQ",
+                "link2": "Privacy"
+            },
+            {
+                "link1": "Help Center",
+                "link2": "Cookie Preferences"
+            },
+            {
+                "link1": "Netflix Shop",
+                "link2": "Corporate Information"
+            },
+            {
+                "link1": "Terms of Use",
+                "link2": ""
+            }
+        ],
+        "lang1": "English",
+        "lang2": "Español"
     }
 }
